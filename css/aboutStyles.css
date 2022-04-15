@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+/*------ main Layout -----------*/
+
+.container-fluied{
+    width: 100%;
+    height: 100vh;
+}
+
+.vertical-navigation-bar{
+   height: 100%;
+   width: 65px;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color:#01090c;
+   overflow-x: hidden;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+/* ver nav bar styles */
+
+.ver-nav-bar-contants{
+    /* border: 1px solid red; */
+    position: sticky;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ver-nav-bar-contants ul{
+    list-style: none;
+    padding: 0;
+}
+.ver-nav-bar-contants ul li{
+    padding: 10px 0;
+}
+
+.var-nav-bar-mid{
+    justify-content: center; 
+    /* vertival nav bar mid section */
+}
+
+.var-nav-bar-top{
+    padding-top: 20px;
+}
+
+.var-nav-bar-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bxs-help-circle{
+    padding-top: 200px;
+    font-size: 20px;
+}
+
+/* ---------- mid nav bar --------- */
+.middle-navigation-bar{
+    width: 100%;
+    height: 65px;
+}
+
+.middle-navigation-bar-inner{
+    width: 100%;
+    height: 100%;
+    background-color:#17ace2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-navigation-bar-inner ul{
+    list-style: none;  
+}
+
+.middle-navigation-bar-inner ul li a{
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+
+.middle-navigation-bar-inner ul li{
+    list-style: none;
+    float: left;
+    padding: 0 20px;
+}
+
+
+
+/* --- end of mid nav bar --- */
+
+
+.content {
+    height: 100vh;
+    margin-left: 65px;
+  }
+
+  /* --------------------------------- */
+  .page1{
+      width: 100%;
+      height: 100%;
+  }
+
+     /* start of about page section styles */
+  /* --------------------------------------- */
+
+  

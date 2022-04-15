@@ -1,0 +1,453 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/*------ main Layout -----------*/
+
+.container-fluied {
+    width: 100%;
+    height: 100vh;
+}
+
+.vertical-navigation-bar {
+    height: 100%;
+    width: 65px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #01090c;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ver nav bar styles */
+
+.ver-nav-bar-contants {
+    /* border: 1px solid red; */
+    position: sticky;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ver-nav-bar-contants ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ver-nav-bar-contants ul li {
+    padding: 10px 0;
+}
+
+.var-nav-bar-mid {
+    justify-content: center;
+    /* vertival nav bar mid section */
+}
+
+.var-nav-bar-top {
+    padding-top: 20px;
+}
+
+.var-nav-bar-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bxs-help-circle {
+    padding-top: 200px;
+    font-size: 20px;
+}
+
+/* ---------- mid nav bar --------- */
+.middle-navigation-bar {
+    width: 100%;
+    height: 65px;
+}
+
+.middle-navigation-bar-inner {
+    width: 100%;
+    height: 100%;
+    background-color: #01090c;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-navigation-bar-inner ul {
+    list-style: none;
+}
+
+.middle-navigation-bar-inner ul li a {
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+
+.middle-navigation-bar-inner ul li {
+    list-style: none;
+    float: left;
+    padding: 0 20px;
+}
+
+
+
+/* --- end of mid nav bar --- */
+
+
+.content {
+    height: 100vh;
+    margin-left: 65px;
+}
+
+/* --------------------------------- */
+.page1 {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* for each section use 860 px */
+/*------- setion 1 ------- */
+.section-01 {
+    width: 100%;
+    height: 860px;
+    display: flex;
+    align-items: center;
+}
+
+/* discrtion styles for the main page */
+
+.details-discription {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    position: absolute;
+    color: aliceblue;
+    row-gap: 1rem;
+}
+
+.details-discription h1 {
+    font-size: 64px;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.details-discription p {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.backgorund-img-container {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1550005869-5fca7db35ddb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+}
+
+.row-btns {
+    display: flex;
+    gap: 1rem;
+}
+
+/* buttons styles */
+.btn-home-descrip {
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    border-radius: 6px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+/* background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); */
+
+.btn-explore-more,
+.btn-contact {
+    background: linear-gradient(-45deg, #0ee69e, #0e9aeb, #23A6D5, #23D5AB);
+    transition: all 0.4s ease-out;
+    background-size: 100% 100%;
+}
+
+/* animation for the backgorund changes */
+.btn-home-descrip:hover {
+    background: linear-gradient(-15deg, #EE7752, #3c72e7, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    transition: all 0.4s ease-out;
+    opacity: 1;
+}
+
+.btn-explore-more:active {
+    background: linear-gradient(-90deg, #E73C7E, #23A6D5, #23D5AB);
+    transition: all 0.4s ease-out;
+    background-size: 100% 300%;
+
+}
+
+.btn-contact:active {
+    background: linear-gradient(-90deg, #E73C7E, #23A6D5, #23D5AB);
+    transition: all 0.4s ease-out;
+    background-size: 100% 300%;
+
+}
+
+.go-up-nav {
+    position: fixed;
+    
+}
+
+.go-up {
+    position: absolute;
+    margin: 330px 0 0 108rem;
+}
+
+.go-up-btn :hover {
+    transform: translateY(-3px) scale(1.1);
+}
+
+
+.go-up-btn{
+    background-color: transparent;
+    border: none;
+}
+
+.go-up button i {
+    font-size: 50px;
+}
+
+/* ---- End of sectio 01 ----- */
+/* enbd of btn styles */
+
+/* ---- start section 02 ----- */
+.section-02-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+    width: 100%;
+    height: 860px;
+}
+
+.container-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-container-box {
+    width: 95%;
+    height: 150px;
+    background-color: #01090c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container-box h2 {
+    font-family: 'Inter', sans-serif;
+}
+
+.container-box-section2 {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Inter', sans-serif;
+}
+
+.container-box-section2 h2 {
+    padding-left: 5%;
+}
+
+.container-box-section2 p {
+    padding-left: 300px;
+}
+
+.container-box-section3 {
+    width: 700px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 5%;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.xp {
+    flex: 1;
+    padding: 0 5%;
+    margin: 0 20%;
+}
+
+/* ------------------------------ */
+
+.our-services {
+    width: 100%;
+    height: 50px;
+    padding: 0 5%;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+}
+
+.out-services-icons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-container {
+    flex: 1;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container i {
+    font-size: 80px;
+}
+
+/*-------------- end of section 02 -------------- */
+
+/*------------------- section 03 -------------- */
+
+.section-03 {
+    width: 100%;
+    height: 900px;
+    padding: 0 55px;
+}
+
+.section-03-container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.headder-bar-text {
+    width: 100%;
+    height: 90px;
+    background-color: #01090c;
+    display: flex;
+    align-items: center;
+}
+
+.headder-bar-text h2 {
+    font-family: 'Inter', sans-serif;
+    color: aliceblue;
+    margin: 0 50px;
+}
+
+.learn-more-btn {
+    width: 120px;
+    height: 40px;
+    margin-left: 850px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FCA311;
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+}
+
+.learn-more-btn:hover {
+    outline: 3px solid #faca7c;
+    color: aliceblue;
+}
+
+.learn-more-btn:active {
+    background: linear-gradient(-90deg, #fc114c, #FCA311);
+    transition: all 0.4s ease-out;
+    background-size: 200%;
+    outline: none;
+}
+
+/* animetion-sliders */
+.anime-sliders-containers {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+}
+
+.sliders-container {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.sliders-container-01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sliders-container-01-01 {
+    width: 100%;
+    height: 430px;
+    background-color: #01090c;
+}
+
+.sliders-container-01-img {
+    background-image: url("https://images.unsplash.com/photo-1594709286083-5f89db74aad9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.sliders-container-01-02 {
+    width: 100%;
+    height: 70px;
+    background-color: #01090c;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.sliders-container-02-img {
+    background-image: url("https://images.unsplash.com/photo-1571587289339-cb7da03fb5a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sliders-container-02 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.year-work {
+    color: aliceblue;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sliders-container-01-02 a i {
+    padding-left: 650px;
+}
+
+.sliders-container-01-02 a i {
+    font-size: 25px;
+}

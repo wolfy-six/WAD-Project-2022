@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/*------ main Layout -----------*/
+
+.container-fluied {
+    width: 100%;
+    height: 100vh;
+}
+
+.vertical-navigation-bar {
+    height: 100%;
+    width: 65px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #01090c;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ver nav bar styles */
+
+.ver-nav-bar-contants {
+    /* border: 1px solid red; */
+    position: sticky;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ver-nav-bar-contants ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ver-nav-bar-contants ul li {
+    padding: 10px 0;
+}
+
+.var-nav-bar-mid {
+    justify-content: center;
+    /* vertival nav bar mid section */
+}
+
+.var-nav-bar-top {
+    padding-top: 20px;
+}
+
+.var-nav-bar-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bxs-help-circle {
+    padding-top: 200px;
+    font-size: 20px;
+}
+
+/* ---------- mid nav bar --------- */
+.middle-navigation-bar {
+    width: 100%;
+    height: 65px;
+}
+
+.middle-navigation-bar-inner {
+    width: 100%;
+    height: 100%;
+    background-color: #01090c;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-navigation-bar-inner ul {
+    list-style: none;
+}
+
+.middle-navigation-bar-inner ul li a {
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+
+.middle-navigation-bar-inner ul li {
+    list-style: none;
+    float: left;
+    padding: 0 20px;
+}
+
+
+
+/* --- end of mid nav bar --- */
+
+
+.content {
+    height: 100vh;
+    margin-left: 65px;
+}
+
+/* --------------------------------- */
+.page1 {
+    width: 100%;
+    height: 100%;
+}
+
+/* start of contact page section styles */
+/* --------------------------------------- */
+
+.section-01 {
+    width: 100%;
+    height: 100vh;
+}
+
+.background-img-container {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+}
+
+/* contact form styles */
+
+.contact-infor-container:hover{
+    transform: translateY(-3px) scale(1.019);
+    transition: all 500ms ease-in-out;
+    box-shadow: 16px 17px 19px -11px rgba(0, 0, 0, 0.1);
+}
+
+.contact-infor-container {
+    width: 600px;
+    height: 750px;
+    margin-left: 250px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    border-radius: 10px;
+    padding: 20px 50px;
+
+    -webkit-box-shadow: 16px 17px 19px -11px rgba(0, 0, 0, 0.53);
+    -moz-box-shadow: 16px 17px 19px -11px rgba(0, 0, 0, 0.53);
+    box-shadow: 16px 17px 19px -11px rgba(0, 0, 0, 0.53);
+}
+
+.contact-infor-container h3{
+    font-family: 'Inter', sans-serif;
+}
+
+.name-box{
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sides{
+    flex: 1;
+}
+
+label{
+    font-family:'Inter', sans-serif;
+    font-weight: bold;
+    color: #4361ee ;
+}
+
+.sides input{
+    margin-top: 5px;
+    width: 200px;
+    height: 35px;
+    border: 1px solid #9092f9;
+    border-radius: 5px;
+    box-shadow: 16px 17px 19px -11px rgba(0, 0, 0, 0.1);
+}
+
+input{
+    margin:5px 0 20px 0;
+    width: 450px;
+    height: 35px;
+    border: 1px solid #9092f9;
+    border-radius: 5px;
+    box-shadow: 16px 17px 19px -11px rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+    margin:5px 0 20px 0;
+    width: 450px;
+    height: 150px;
+    border: 1px solid #9092f9;
+    border-radius: 5px;
+    box-shadow: 16px 17px 19px -11px rgba(0, 0, 0, 0.1);
+}
+
+.send-message-btn{
+    width: 450px;
+    height: 45px;
+    background-color: #001c55;
+    border-radius: 6px;
+    color: white;
+    border: none;
+}
+
+.send-message-btn:hover{
+    outline: 3px solid #42a5f5;
+    color: aliceblue;
+    background-color: #094297;
+}
+
+.send-message-btn:active{
+    transition: all 300ms ease-out;
+    background-color: #001c55;
+}
+
+/* ----- section 02 --------- */
+/* footer */
+/* ------------------------------------ */
+
+.section-02{
+    width: 100%;
+    height: 200px;
+}
+.footer{
+    width: 100%;
+}
